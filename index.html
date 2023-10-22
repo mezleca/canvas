@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const body = document.body;
+        const new_canvas = document.createElement("canvas");
+        const input = document.createElement("input");
+
+        input.type = "text";
+        input.setAttribute("id", "prompt");
+        new_canvas.setAttribute("id", "canvas");
+        new_canvas.width = body.clientWidth / 2;
+        new_canvas.height = body.clientHeight / 2;
+
+        body.appendChild(new_canvas);
+        body.appendChild(input);
+    </script> 
+    <script src="script.js"></script>
+</body>
+</html>
